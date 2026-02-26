@@ -5,12 +5,28 @@
     <title>Job Portal - Post a Job</title>
     <link rel="stylesheet" href="style.css">
     <style>
- body {
+        body {
             margin: 0;
             background-image: url("bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+
+        .job-card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -56,31 +72,13 @@
         </select><br><br>
 
         <label>Salary:</label><br>
-        <input type="text" name="salary" placeholder=" as ₹5,00,000 per year"><br><br>
+        <input type="text" name="salary"><br><br>
 
         <label>Job Description:</label><br>
         <textarea name="job_description" rows="5" cols="50" required></textarea><br><br>
 
         <label>Skills Required:</label><br>
-        <textarea name="skills" rows="3" cols="50" placeholder=" as HTML, CSS, JavaScript"></textarea><br><br>
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-        <legend>Employer Details</legend>
-
-        <label>Contact Person:</label><br>
-        <input type="text" name="contact_person" required><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label>Phone Number:</label><br>
-        <input type="tel" name="phone"><br><br>
-
-        <label>Application Deadline:</label><br>
-        <input type="date" name="deadline"><br><br>
+        <textarea name="skills" rows="3" cols="50"></textarea><br><br>
     </fieldset>
 
     <br>
@@ -90,17 +88,23 @@
 
 </form>
 
-</main>
-  <h2>Job Listings</h2>
-    <div id="jobCards"></div>
+<hr>
 
-    <script src="script.js"></script>
+<h2>Search Jobs</h2>
+<input type="text" id="searchInput" placeholder="Search by title, company, skills...">
+
+<h2>Job Listings</h2>
+<div id="jobCards"></div>
+
+</main>
+
 <hr>
 
 <footer>
     <p>© 2026 Job Portal</p>
 </footer>
 
+<script src="script.js"></script>
+
 </body>
 </html>
-

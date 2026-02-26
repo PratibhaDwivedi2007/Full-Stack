@@ -1,4 +1,7 @@
 let form = document.querySelector("#jobform");
+let jobCardsContainer = document.querySelector("#jobCards");
+let searchInput = document.querySelector("#searchInput");
+
 
 form.addEventListener("submit", function (e) {
 
@@ -24,15 +27,30 @@ form.addEventListener("submit", function (e) {
         <button class="delete-btn">Delete</button>
     `;
 
-    document.querySelector("#jobCards").appendChild(card);
+    jobCardsContainer.appendChild(card);
 
     card.querySelector(".delete-btn").addEventListener("click", function () {
         card.remove();
     });
 
-    let searchBtn = document.querySelector("#searchBtn");
-    searchBtn.addEventListener("click", function () {
-        
-    })
     form.reset();
+});
+
+
+searchInput.addEventListener("keyup", function () {
+
+    let searchText = searchInput.value.toLowerCase();
+    let jobCards = document.querySelectorAll(".job-card");
+
+    jobCards.forEach(function(card) {
+
+        let cardText = card.innerText.toLowerCase();
+
+        if (cardText.includes(searchText)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
 });
