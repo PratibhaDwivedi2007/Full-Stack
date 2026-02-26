@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal - Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ body {
+            margin: 0;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <img src="logo.png" alt="Job Portal Logo" height="100" width="200"><br><br>
+        <a href="homepage.htm">Home</a> |
+        <a href="post a job.htm">Post a Job</a> |
+        <a href="login.htm">Login</a> |
+        <a href="signup.htm">Signup</a> |
+        <a href="profile.htm">Profile</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+
+<section>
+    <h2>Search Jobs</h2>
+
+    <form>
+        <fieldset>
+            <legend>Job Search</legend>
+
+            <label>Job Title or Company:</label><br>
+            <input type="text" name="search"><br><br>
+
+            <label>Location:</label><br>
+            <select name="location">
+                <option>All Locations</option>
+                <option>Remote</option>
+                <option>New York</option>
+                <option>Bangalore</option>
+            </select><br><br>
+
+            <label>Job Type:</label><br>
+            <select name="type">
+                <option>All Types</option>
+                <option>Full Time</option>
+                <option>Part Time</option>
+                <option>Internship</option>
+            </select><br><br>
+
+            <input type="submit" value="Search">
+        </fieldset>
+    </form>
+</section>
+
+<hr>
+
+<section>
+    <h2>Available Jobs</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Developer</td>
+                <td>Tech Corp</td>
+                <td>Remote</td>
+                <td>Full Time</td>
+                <td>Develop and maintain websites using HTML, CSS, and JavaScript.</td>
+                <td><a href="#">Apply</a></td>
+            </tr>
+
+            <tr>
+                <td>Data Analyst</td>
+                <td>DataWorks</td>
+                <td>Bangalore</td>
+                <td>Full Time</td>
+                <td>Analyze business data and prepare reports.</td>
+                <td><a href="#">Apply</a></td>
+            </tr>
+
+            <tr>
+                <td>UI/UX Designer</td>
+                <td>Creative Hub</td>
+                <td>New York</td>
+                <td>Part Time</td>
+                <td>Design user-friendly interfaces for applications.</td>
+                <td><a href="#">Apply</a></td>
+            </tr>
+
+            <tr>
+                <td>Software Intern</td>
+                <td>NextGen Solutions</td>
+                <td>Remote</td>
+                <td>Internship</td>
+                <td>Assist in software development and testing.</td>
+                <td><a href="#">Apply</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>© 2026 Job Portal</p>
+</footer>
+
+</body>
+</html>

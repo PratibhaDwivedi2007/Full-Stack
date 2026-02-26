@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal - Post a Job</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ body {
+            margin: 0;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <img src="logo.png" alt="Job Portal Logo" height="100" width="200"><br><br>
+        <a href="homepage.htm">Home</a> |
+        <a href="jobs.htm">Jobs</a> |
+        <a href="login.htm">Login</a> |
+        <a href="signup.htm">Signup</a> |
+        <a href="profile.htm">Profile</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+
+<h1>Post a Job</h1>
+
+<form id="jobform">
+
+    <fieldset>
+        <legend>Job Details</legend>
+
+        <label>Job Title:</label><br>
+        <input type="text" name="job_title" required><br><br>
+
+        <label>Company Name:</label><br>
+        <input type="text" name="company_name" required><br><br>
+
+        <label>Job Location:</label><br>
+        <input type="text" name="job_location" required><br><br>
+
+        <label>Job Type:</label><br>
+        <select name="job_type" required>
+            <option value="">--Select--</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Internship">Internship</option>
+            <option value="Contract">Contract</option>
+        </select><br><br>
+
+        <label>Salary:</label><br>
+        <input type="text" name="salary" placeholder=" as ₹5,00,000 per year"><br><br>
+
+        <label>Job Description:</label><br>
+        <textarea name="job_description" rows="5" cols="50" required></textarea><br><br>
+
+        <label>Skills Required:</label><br>
+        <textarea name="skills" rows="3" cols="50" placeholder=" as HTML, CSS, JavaScript"></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Employer Details</legend>
+
+        <label>Contact Person:</label><br>
+        <input type="text" name="contact_person" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Application Deadline:</label><br>
+        <input type="date" name="deadline"><br><br>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Post Job">
+    <input type="reset" value="Clear Form">
+
+</form>
+
+</main>
+  <h2>Job Listings</h2>
+    <div id="jobCards"></div>
+
+    <script src="script.js"></script>
+<hr>
+
+<footer>
+    <p>© 2026 Job Portal</p>
+</footer>
+
+</body>
+</html>
+
