@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ body {
+            margin: 0;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+
+        <img src="logo.png" alt="Job Portal Logo" height="80" width="180"><br><br>
+        <a href="homepage.htm">Home</a> |
+        <a href="jobs.html">Jobs</a> |
+        <a href="post a job.htm">Post a Job</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+
+<section>
+    <h2>Create an Account</h2>
+
+    <form>
+        <fieldset>
+            <legend>Signup</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm">Confirm Password:</label><br>
+            <input type="password" id="confirm" name="confirm" required><br><br>
+
+            <label for="role">Register As:</label><br>
+            <select id="role" name="role">
+                <option>Job Seeker</option>
+                <option>Recruiter</option>
+            </select><br><br>
+
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>© 2026 OneStop for Job Seeker | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
